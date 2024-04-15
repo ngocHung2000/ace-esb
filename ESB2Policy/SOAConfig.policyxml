@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policies>
+  <policy policyType="UserDefined" policyName="SOAConfig" policyTemplate="UserDefined">
+    <HostName>PayBillServer_200</HostName>
+    <SOASecurity>on</SOASecurity>
+    <OperationName>#VerifyUserAD#</OperationName>
+    <VerifyUserAD>(?&lt;=&lt;Password&gt;)(.*?)(?=&lt;/Password&gt;)</VerifyUserAD>
+  </policy>
+</policies>
